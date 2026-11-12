@@ -159,11 +159,6 @@ button {
   line-height: 1.1;
 }
 
-.brand-owner {
-  font-size: 0.875rem;
-  color: var(--ink-2);
-}
-
 .topbar-actions {
   display: flex;
   gap: 8px;

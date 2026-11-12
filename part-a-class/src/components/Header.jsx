@@ -10,10 +10,7 @@ class Header extends Component {
       <header className="topbar">
         <div className="brand">
           <span className="brand-logo">{logoIcon}</span>
-          <div>
-            <h1 className="brand-name">Sổ chi tiêu</h1>
-            <p className="brand-owner">Phạm Duy Thịnh, B25DCTV072</p>
-          </div>
+          <h1 className="brand-name">Sổ chi tiêu</h1>
         </div>
 
         <div className="topbar-actions">
