@@ -101,7 +101,6 @@ export default function Receipt({
               <strong>{ready ? formatMoney(total) : '--'}</strong>
             </div>
             <div className="barcode" aria-hidden="true" />
-            <p className="receipt-thanks">Chi đúng việc, sống vừa túi tiền.</p>
           </footer>
         </article>
       </div>

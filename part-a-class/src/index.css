@@ -1085,7 +1085,7 @@ button {
 
 .barcode {
   height: 46px;
-  margin: 22px 12% 8px;
+  margin: 22px 12% 4px;
   background: repeating-linear-gradient(
     90deg,
     var(--paper-ink) 0 2px,
@@ -1098,12 +1098,6 @@ button {
     transparent 14px 16px
   );
   opacity: 0.88;
-}
-
-.receipt-thanks {
-  color: var(--paper-soft);
-  font-size: 0.75rem;
-  text-align: center;
 }
 
 .receipt-status {
