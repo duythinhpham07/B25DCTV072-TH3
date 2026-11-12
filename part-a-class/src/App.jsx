@@ -95,19 +95,12 @@ class App extends Component {
           onToggleClock={() => this.setState((p) => ({ showClock: !p.showClock }))}
         />
 
-        <main className="layout">
-          <div className="area-clock">
-            {showClock ? (
+        <main className={showClock ? 'layout' : 'layout no-clock'}>
+          {showClock && (
+            <div className="area-clock">
               <Clock />
-            ) : (
-              <section className="clock clock--off">
-                <p>Đồng hồ đang ẩn, bộ đếm giây đã được dừng.</p>
-                <button type="button" className="btn-ghost" onClick={() => this.setState({ showClock: true })}>
-                  Hiện lại
-                </button>
-              </section>
-            )}
-          </div>
+            </div>
+          )}
 
           <div className="area-form">
             <ExpenseForm onAdd={this.handleAdd} />

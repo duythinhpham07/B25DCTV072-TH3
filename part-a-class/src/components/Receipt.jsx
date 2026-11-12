@@ -18,7 +18,6 @@ class Receipt extends Component {
           <article className="receipt" aria-label="Danh sách khoản chi">
             <header className="receipt-head">
               <p className="receipt-shop">Sổ chi tiêu cá nhân</p>
-              <p>Phạm Duy Thịnh, MSV B25DCTV072</p>
               <p>
                 Đang xem: {filterName}
                 {keyword && <>, có chữ “{keyword}”</>}

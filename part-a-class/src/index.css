@@ -208,6 +208,13 @@ button {
   align-items: start;
 }
 
+.layout.no-clock {
+  grid-template-rows: auto 1fr;
+  grid-template-areas:
+    'form  sheet'
+    'stats sheet';
+}
+
 .area-clock { grid-area: clock; }
 .area-form { grid-area: form; }
 .area-sheet { grid-area: sheet; }
@@ -287,18 +294,6 @@ button {
   background: var(--accent);
   opacity: 1;
   transform: scaleY(1.35);
-}
-
-.clock--off {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 16px;
-  min-height: 130px;
-  padding: 18px 20px;
-  border: 1.5px dashed var(--panel-line);
-  border-radius: 18px;
-  color: var(--ink-2);
 }
 
 /* ---------- Form ---------- */
@@ -1248,6 +1243,13 @@ button {
       'sheet'
       'stats';
     row-gap: 28px;
+  }
+
+  .layout.no-clock {
+    grid-template-areas:
+      'form'
+      'sheet'
+      'stats';
   }
 
   .area-sheet {
