@@ -67,7 +67,7 @@ Giá trị `category` gồm: `an-uong`, `di-lai`, `hoc-tap`, `giai-tri`.
 | `useFetch` (custom) | lấy, thêm, xóa dữ liệu trên mockapi; trả về `loading`, `error`, `reload` |
 | `useClock` (custom) | trả về thời gian hiện tại, tự dọn interval |
 | `useDebounce` (custom) | làm trễ từ khóa tìm kiếm |
-| `useRef` | focus lại ô "Chi cho việc gì" sau khi thêm thành công |
+| `useRef` | focus lại ô "Việc cần chi tiêu" sau khi thêm thành công |
 | `useContext` | chế độ sáng/tối dùng chung (`ThemeContext` + `useTheme`) |
 
 ## Hooks đã giúp khắc phục các thách thức của Class ở đâu trong bài

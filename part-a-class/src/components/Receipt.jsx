@@ -6,7 +6,7 @@ class Receipt extends Component {
   render() {
     const { expenses, total, grandTotal, isFiltered, filterName, keyword, lastAddedId, onDelete, onReset } = this.props
 
-    let emptyText = 'Sổ đang trống. Ghi khoản chi đầu tiên ở khung bên cạnh.'
+    let emptyText = 'Sổ đang trống. Thêm khoản chi đầu tiên ở khung bên cạnh.'
     if (isFiltered) emptyText = 'Không có khoản nào khớp với bộ lọc hiện tại.'
 
     return (

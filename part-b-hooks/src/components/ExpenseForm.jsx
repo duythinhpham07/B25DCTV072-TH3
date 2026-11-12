@@ -70,12 +70,11 @@ export default function ExpenseForm({ onAdd }) {
   return (
     <form className="slip" onSubmit={handleSubmit} noValidate>
       <div className="slip-head">
-        <h2>Ghi khoản chi</h2>
-        <p>Điền đủ bốn mục rồi bấm thêm vào sổ.</p>
+        <h2>Thêm khoản chi</h2>
       </div>
 
       <div className={errors.title ? 'field has-error' : 'field'}>
-        <label htmlFor="title">Chi cho việc gì</label>
+        <label htmlFor="title">Việc cần chi tiêu</label>
         <input
           id="title"
           name="title"

@@ -17,7 +17,7 @@ export default function Receipt({
 }) {
   const emptyText = isFiltered
     ? 'Không có khoản nào khớp với bộ lọc hiện tại.'
-    : 'Sổ đang trống. Ghi khoản chi đầu tiên ở khung bên cạnh.'
+    : 'Sổ đang trống. Thêm khoản chi đầu tiên ở khung bên cạnh.'
 
   let printerClass = 'printer'
   if (loading) printerClass += ' is-busy'
