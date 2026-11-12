@@ -30,15 +30,16 @@ npm run dev
 ```bash
 cd part-b-hooks
 npm install
-cp .env.example .env     # Windows: copy .env.example .env
-```
-
-Mở file `.env`, thay `VITE_API_URL` bằng endpoint mockapi của resource `expenses` (các trường: `title` string, `amount` number, `category` string, `date` string). Sau đó:
-
-```bash
-npm run seed   # (không bắt buộc) nạp 12 khoản chi mẫu lên mockapi
 npm run dev
 ```
+
+Endpoint mockapi đã có sẵn trong file `part-b-hooks/.env`:
+
+```
+VITE_API_URL=https://6ad030cb03feaa52b21f18de.mockapi.io/api/v1/expenses
+```
+
+Resource `expenses` gồm các trường `title` (string), `amount` (number), `category` (string), `date` (string). Nếu dữ liệu trên mockapi bị xóa hết, chạy `npm run seed` để nạp lại 12 khoản chi mẫu.
 
 Giá trị `category` gồm: `an-uong`, `di-lai`, `hoc-tap`, `giai-tri`.
 
